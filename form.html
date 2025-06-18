@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Musa Iliasu College - Application Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1 class="school-name">Musa Iliasu College</h1>
+    <p class="motto">Gwarzo Road, P.O.Box 701, Kano-Nigeria</p>
+    <p class="motto">Tel: +234 703 501 7899</p>
+    <p class="motto">Motto: Ilim Da Tarbiya</p>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="form.html">Apply</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="main-content">
+    <h2>Student Application Form</h2>
+</section>
+    <form id="applicationForm" action="#" method="post" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td>
+            <label for="firstname">First Name:</label><br>
+            <input type="text" name="firstname" id="firstname" required>
+          </td>
+          <td>
+            <label for="othername">Other Name:</label><br>
+            <input type="text" name="othername" id="othername" required>
+          </td>
+          <td>
+            <label for="surname">Surname:</label><br>
+            <input type="text" name="surname" id="surname" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email Address:</label><br>
+            <input type="email" name="email" id="email" required>
+          </td>
+          <td>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" name="phone" id="phone" required>
+          </td>
+          <td>
+            <label for="address">Home Address:</label><br>
+            <input type="text" name="address" id="address">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" name="dob" id="dob" required>
+          </td>
+          <td>
+            <label for="pob">Place of Birth:</label><br>
+            <input type="text" name="pob" id="pob" required>
+          </td>
+          <td>
+            <label for="soO">State of Origin:</label><br>
+            <input type="text" name="soO" id="soO" required>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male" id="male"> <label for="male">Male</label>
+            <input type="radio" name="gender" value="Female" id="female"> <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label for="course">Preferred Course:</label><br>
+            <select name="course" id="course" required>
+              <option value="">--Select Course--</option>
+              <option value="science">Science</option>
+              <option value="arts">Arts</option>
+              <option value="commercial">Commercial</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label for="comments">Additional Comments:</label><br>
+            <textarea name="comments" id="comments" rows="4" placeholder="Tell us anything relevant..."></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label for="passport">Upload Passport Photograph:</label><br>
+            <input type="file" name="passport" id="passport" accept="image/*">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" class="submit-row">
+            <input type="submit" value="Submit Application">
+          </td>
+        </tr>
+      </table>
+       
+    </form>
+   
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Musa Iliasu College. All rights reserved.</p>
+  </footer>
+ <!-- Back to Top Button -->
+  <button id="topBtn" onclick="scrollToTop()" title="Go to top">↑ Top</button>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+
+
+</body>
+</html>

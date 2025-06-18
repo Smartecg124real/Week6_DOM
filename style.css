@@ -1,0 +1,245 @@
+/* Global styles */
+body {
+  background-color: powderblue;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.school-name {
+  color: rgb(210, 210, 228);
+  border: 2px solid blue;
+  background-color: darkblue;
+  padding: 10px;
+}
+
+.motto {
+  color: red;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 4px 0;
+}
+
+/* Navigation using Flexbox */
+.navigation {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid blue;
+  background-color: yellow;
+}
+
+.navigation li {
+  display: inline;
+  font-weight: bold;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  display: block;
+}
+
+.navigation a:hover {
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.navigation .active {
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+/* Section headings */
+h2 {
+  color: red;
+  font-weight: bold;
+  font-size: 2.1em;
+}
+
+/* Layout using CSS Grid */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  main {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 2px solid darkblue;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Main content block */
+.main-content {
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Welcome text */
+.welcome-text {
+  color: black;
+  font-size: 1.5em;
+}
+
+/* Form styling */
+form {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+form table {
+  border-collapse: separate;
+  border-spacing: 20px 15px;
+  width: 100%;
+  table-layout: fixed;
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+form table td {
+  vertical-align: top;
+  width: 33%;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #004080;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #0066cc;
+}
+
+.submit-row {
+  text-align: center;
+}
+
+/* Course and news sections */
+.course-list,
+.news-section {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* Welcome Box Animation */
+#welcomeBox {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Scroll to Top Button */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+#topBtn:hover {
+  background-color: navy;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
